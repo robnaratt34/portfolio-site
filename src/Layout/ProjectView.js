@@ -3,6 +3,7 @@ import { Tab, Tabs } from "@mui/material";
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
+import ActiveProjects from "./ActiveProjects";
 
 function ProjectView() {
 
@@ -20,7 +21,7 @@ function ProjectView() {
                     <Tab label="All Projects" value={2}/>            
                 </Tabs>
 
-                <TabPanel value={1}>Active Projects</TabPanel>
+                <TabPanel value={1}><ActiveProjects /></TabPanel>
                 <TabPanel value={2}>All Projects</TabPanel>
             </TabContext>
         </div>
