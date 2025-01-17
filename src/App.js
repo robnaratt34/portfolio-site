@@ -1,10 +1,11 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
+import ProjectView from './Layout/ProjectView';
 
 function App() {
   return (
     <div className="App">
-      <Button variant="contained">Hello world</Button>
+      <ProjectView />
     </div>
   );
 }
