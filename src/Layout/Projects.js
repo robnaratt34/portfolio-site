@@ -12,7 +12,7 @@ function Projects(props){
     const {cards} = props
     return(
         <div>
-            {cards.map((card)=> <ProjectCard card={card}/>}
+          {/*  {cards.map((card)=> <ProjectCard card={card}/>)}*/}
             <Card sx={{maxWidth:345}}>
                 <CardContent>
                     <Typography variant="h2">Project</Typography>

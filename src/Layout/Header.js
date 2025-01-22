@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 function Header() {
   return (
     <div>
+      <h1>Quintana</h1>
     </div>
   )
 }
