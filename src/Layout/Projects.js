@@ -6,10 +6,13 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import logo from "../Media/js.png"
+import ProjectCard from "./ProjectCard"
 
-function ActiveProjects(){
+function Projects(props){
+    const {cards} = props
     return(
         <div>
+            {cards.map((card)=> <ProjectCard card={card}/>}
             <Card sx={{maxWidth:345}}>
                 <CardContent>
                     <Typography variant="h2">Project</Typography>
@@ -26,4 +29,4 @@ function ActiveProjects(){
     )
 }
 
-export default ActiveProjects
+export default Projects
