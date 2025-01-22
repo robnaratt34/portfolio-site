@@ -4,6 +4,8 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Projects from "./Projects";
+import { active } from "../data/active";
+import { all } from "../data/all";
 
 function ProjectView() {
 
@@ -21,8 +23,8 @@ function ProjectView() {
                     <Tab label="All Projects" value={2}/>            
                 </Tabs>
 
-                <TabPanel value={1}><Projects /></TabPanel>
-                <TabPanel value={2}><Projects /></TabPanel>
+                <TabPanel value={1}><Projects projects={active}/></TabPanel>
+                <TabPanel value={2}><Projects projects={all}/></TabPanel>
             </TabContext>
         </div>
     )

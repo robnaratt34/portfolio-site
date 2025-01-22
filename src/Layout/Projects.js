@@ -9,10 +9,10 @@ import logo from "../Media/js.png"
 import ProjectCard from "./ProjectCard"
 
 function Projects(props){
-    const {cards} = props
+    const {projects} = props
     return(
         <div>
-          {/*  {cards.map((card)=> <ProjectCard card={card}/>)}*/}
+            {projects.map((project)=> <ProjectCard project={project}/>)}
             <Card sx={{maxWidth:345}}>
                 <CardContent>
                     <Typography variant="h2">Project</Typography>
