@@ -5,9 +5,9 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Projects from "./Projects";
 import { active } from "../data/active";
-import { all } from "../data/all";
 
-function ProjectView() {
+function ProjectView(props) {
+    const {active, all} = props;
 
     const [value, setValue] = useState(1)
 
