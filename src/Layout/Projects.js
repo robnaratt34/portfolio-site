@@ -5,15 +5,16 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Box, Container} from "@mui/material";
 import logo from "../Media/js.png"
 import ProjectCard from "./ProjectCard"
 
 function Projects(props){
     const {projects} = props
     return(
-        <div>
+        <Box sx={{display:'flex', justifyContent: "center", flexGrow: 1, gap:2}}>
             {projects.map((project)=> <ProjectCard project={project}/>)}
-            <Card sx={{maxWidth:345}}>
+            <Card sx={{width:345}}>
                 <CardContent>
                     <Typography variant="h2">Project</Typography>
                     <CardMedia 
@@ -25,7 +26,7 @@ function Projects(props){
                     <button>Link</button>
                 </CardContent>
             </Card>
-        </div>
+        </Box>
     )
 }
 

@@ -11,7 +11,7 @@ function ProjectCard(props){
     const {project} = props;
     return(
         <div>
-            <Card sx={{maxWidth:345}}>
+            <Card sx={{width:345}}>
                 <CardContent>
                     <Typography variant="h2">{project.name}</Typography>
                     <CardMedia 

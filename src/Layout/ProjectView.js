@@ -1,13 +1,12 @@
 import React, {useState} from "react";
-import { Tab, Tabs } from "@mui/material";
+import { Box, Container, Tab, Tabs } from "@mui/material";
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Projects from "./Projects";
-import { active } from "../data/active";
 
-function ProjectView(props) {
-    const {active, all} = props;
+function ProjectView({projects}) {
+    const {active, all} = projects;
 
     const [value, setValue] = useState(1)
 
@@ -22,9 +21,10 @@ function ProjectView(props) {
                     <Tab label="Active Projects" value = {1}/>
                     <Tab label="All Projects" value={2}/>            
                 </Tabs>
-
+                
                 <TabPanel value={1}><Projects projects={active}/></TabPanel>
                 <TabPanel value={2}><Projects projects={all}/></TabPanel>
+                
             </TabContext>
         </div>
     )
