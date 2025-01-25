@@ -27,7 +27,7 @@ export const data = {
       }
     ],
   },
-  about:"",
+  about:"About Me goes here",
   skills:[],
   acheivements:[],
   contact:[],
