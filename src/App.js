@@ -4,6 +4,7 @@ import ProjectView from './Layout/ProjectView';
 import Header from './Layout/Header';
 import HeaderBar from './Layout/HeaderBar';
 import AboutMe from './Layout/AboutMe';
+import ContactMe from './Layout/ContactMe';
 import {data} from './data/data';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <HeaderBar />
       <ProjectView projects={projects} />
       <AboutMe about={about} skills={skills} achievements={acheivements} />
+      <ContactMe contact={contact} />
     </div>
   );
 }
