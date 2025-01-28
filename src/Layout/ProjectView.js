@@ -1,7 +1,6 @@
 import React, {useState} from "react";
-import { Box, Container, Tab, Tabs } from "@mui/material";
+import {Tab, Tabs } from "@mui/material";
 import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Projects from "./Projects";
 

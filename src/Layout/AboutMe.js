@@ -6,11 +6,13 @@ function AboutMe({about, skills, achievements}){
   return (
     <Box sx={{display:"flex"}}>
       <Box component="img" src={profile} />
-      <Typography variant="body1">
-        {about}
-      </Typography>
-      <Box sx={{display:"flex"}}>
-        {skills.map((skill) => <Typography>{skill}</Typography>)}
+      <Box sx={{display:"flex", flexDirection:"column"}}>
+        <Typography variant="body1">
+          {about}
+        </Typography>
+        <Box sx={{display:"flex"}}>
+          {skills.map((skill) => <Typography>{skill}</Typography>)}
+        </Box>
       </Box>
     </Box>
   )

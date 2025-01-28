@@ -1,11 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { Box, Container} from "@mui/material";
+import { Box } from "@mui/material";
 import logo from "../Media/js.png"
 import ProjectCard from "./ProjectCard"
 
@@ -23,7 +22,7 @@ function Projects(props){
                         title="js image"
                     />
                     <Typography variant="h4">I did this</Typography>
-                    <button>Link</button>
+                    <Button>Link</Button>
                 </CardContent>
             </Card>
         </Box>
