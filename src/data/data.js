@@ -5,30 +5,30 @@ export const data = {
         name: "We Love Movies",
         description: "You Know",
         link: '#',
-        github: '#',
+        github: 'https://github.com/robnaratt34/welovemovies.git',
       },
       {
         name: "Whack-A-Mole",
         description: "You Know",
         link: '#',
-        github: '#',
+        github: 'https://github.com/robnaratt34/whack-a-mole.git',
       }
     ],
     all:[
       {
         name: "We Love Movies",
         description: "You Know",
-        github: '#',
+        github: 'https://github.com/robnaratt34/welovemovies.git',
       },
       {
         name: "Whack-A-Mole",
         description: "You Know",
-        github: '#',
+        github: 'https://github.com/robnaratt34/whack-a-mole.git',
       }
     ],
   },
   about:"About Me goes here",
-  skills:[],
-  acheivements:[],
-  contact:[],
+  skills:["Java", "Javascript", "Python", "HTML", "CSS", "React", "Express"],
+  acheivements:["Eagle Scout",],
+  contact:["john.quintana@gmail.com"],
 }
