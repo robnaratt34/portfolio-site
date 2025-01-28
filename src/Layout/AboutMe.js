@@ -9,6 +9,9 @@ function AboutMe({about, skills, achievements}){
       <Typography variant="body1">
         {about}
       </Typography>
+      <Box sx={{display:"flex"}}>
+        {skills.map((skill) => <Typography>{skill}</Typography>)}
+      </Box>
     </Box>
   )
 }

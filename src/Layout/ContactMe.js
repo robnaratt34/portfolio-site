@@ -10,3 +10,5 @@ function ContactMe({contact}){
         </Box>
     )
 }
+
+export default ContactMe
