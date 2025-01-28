@@ -4,7 +4,7 @@ import profile from "../Media/js.png"
 
 function AboutMe({about, skills, achievements}){
   return (
-    <Box sx={{display:"flex"}}>
+    <Box sx={{display:"flex", justifyContent:"center"}}>
       <Box component="img" src={profile} />
       <Box sx={{display:"flex", flexDirection:"column"}}>
         <Typography variant="body1">

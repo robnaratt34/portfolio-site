@@ -15,14 +15,16 @@ function Projects(props){
             {projects.map((project)=> <ProjectCard project={project}/>)}
             <Card sx={{width:345}}>
                 <CardContent>
-                    <Typography variant="h2">Project</Typography>
+                    <Typography variant="h4" sx={{display:"flex", justifyContent:"center"}}>Project</Typography>
                     <CardMedia 
                         sx={{height:140}}
                         image={logo}
                         title="js image"
                     />
-                    <Typography variant="h4">I did this</Typography>
+                    <Typography variant="body1">I did this</Typography>
+                    <Box sx={{display:"flex", justifyContent:"center"}}>
                     <Button>Link</Button>
+                    </Box>
                 </CardContent>
             </Card>
         </Box>
