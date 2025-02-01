@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
+import Switch from '@mui/material/Switch';
 
 function HeaderBar(){
     return (
@@ -12,9 +13,17 @@ function HeaderBar(){
             <AppBar position='static' style={{backgroundColor:'black', color:'blue'}} sx={{display: 'flex', justifyContent: 'center', width: '100%'}}>
                 <Toolbar>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent:"center" }}>
-                        <Link href='#' underline='hover'><Typography variant='h6' sx={{mx:4, textAlign:'center'}}>Skills</Typography></Link>
-                        <Link href='#' underline='hover'><Typography variant='h6' sx={{mx:4, textAlign:'center'}}>Projects</Typography></Link>
-                        <Link href='#' underline='hover'><Typography variant='h6' sx={{mx:4, textAlign:'center'}}>About</Typography></Link>
+                        <Box>
+                            <Typography variant='h5'>JQ</Typography>
+                        </Box>
+                        <Box>
+                            <Link href='#' underline='hover'><Typography variant='h6' sx={{mx:4, textAlign:'center'}}>Skills</Typography></Link>
+                            <Link href='#' underline='hover'><Typography variant='h6' sx={{mx:4, textAlign:'center'}}>Projects</Typography></Link>
+                            <Link href='#' underline='hover'><Typography variant='h6' sx={{mx:4, textAlign:'center'}}>About</Typography></Link>
+                        </Box>
+                        <Box>
+                            <Switch />
+                        </Box>
                     </Box>
                 </Toolbar>
             </AppBar>
