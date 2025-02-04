@@ -17,7 +17,7 @@ function Projects(props){
                 <CardContent>
                     <Typography variant="h4" sx={{display:"flex", justifyContent:"center"}}>Project</Typography>
                     <CardMedia 
-                        sx={{height:140}}
+                        sx={{height:180}}
                         image={logo}
                         title="js image"
                     />

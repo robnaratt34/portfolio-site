@@ -4,7 +4,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import logo from "../Media/js.png"
 import { Box } from "@mui/material";
 
 function ProjectCard(props){
@@ -15,8 +14,8 @@ function ProjectCard(props){
                 <CardContent>
                     <Typography variant="h4" sx={{display:"flex", justifyContent:"center"}}>{project.name}</Typography>
                     <CardMedia 
-                        sx={{height:140}}
-                        image={logo}
+                        sx={{height:180}}
+                        image={project.logo}
                         title="js image"
                     />
                     <Typography variant="body1">{project.description}</Typography>
