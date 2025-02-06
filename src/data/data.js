@@ -5,14 +5,14 @@ export const data = {
         name: "We Love Movies",
         description: "You Know",
         link: '#',
-        logo: '../Media/wam.PNG',
+        logo: '../Media/wam.png',
         github: 'https://github.com/robnaratt34/welovemovies.git',
       },
       {
         name: "Whack-A-Mole",
         description: "You Know",
         link: '#',
-        logo: '../Media/wam.PNG',
+        logo: '../Media/wam.png',
         github: 'https://github.com/robnaratt34/whack-a-mole.git',
       }
     ],
@@ -20,13 +20,13 @@ export const data = {
       {
         name: "We Love Movies",
         description: "You Know",
-        logo: '../Media/wam.PNG',
+        logo: '../Media/wam.png',
         github: 'https://github.com/robnaratt34/welovemovies.git',
       },
       {
         name: "Whack-A-Mole",
         description: "You Know",
-        logo: '../Media/wam.PNG',
+        logo: '../Media/wam.png',
         github: 'https://github.com/robnaratt34/whack-a-mole.git',
       }
     ],

@@ -8,6 +8,7 @@ import { Box } from "@mui/material";
 
 function ProjectCard(props){
     const {project} = props;
+    const logo = require(project.logo)
     return(
         <div>
             <Card sx={{width:345}}>
@@ -15,7 +16,7 @@ function ProjectCard(props){
                     <Typography variant="h4" sx={{display:"flex", justifyContent:"center"}}>{project.name}</Typography>
                     <CardMedia 
                         sx={{height:180}}
-                        image={project.logo}
+                        image={logo}
                         title="js image"
                     />
                     <Typography variant="body1">{project.description}</Typography>
