@@ -22,8 +22,8 @@ function ProjectCard(props){
                     />
                     <Typography variant="body1">{project.description}</Typography>
                     <Box sx={{display:"flex", justifyContent:"center"}}>
-                        {project.link && <Button>Link</Button>}
-                        <Button>Github</Button>
+                        {project.link && <Button target="_blank" href={project.link}>Link</Button>}
+                        <Button target="_blank" href={project.github}>Github</Button>
                     </Box>
                 </CardContent>
             </Card>
