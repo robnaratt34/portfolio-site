@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -8,7 +8,9 @@ import { Box } from "@mui/material";
 
 function ProjectCard(props){
     const {project} = props;
-    const logo = require(project.logo)
+    const [logo, setLogo] = useState();
+    import(project.logo).then((image) => setLogo(image.default));
+
     return(
         <div>
             <Card sx={{width:345}}>
@@ -21,8 +23,8 @@ function ProjectCard(props){
                     />
                     <Typography variant="body1">{project.description}</Typography>
                     <Box sx={{display:"flex", justifyContent:"center"}}>
-                        {project.link && <Button>Link</Button>}
-                        <Button>Github</Button>
+                        {project.link && <Button target="_blank" href={project.link}>Link</Button>}
+                        <Button target="_blank" href={project.github}>Github</Button>
                     </Box>
                 </CardContent>
             </Card>
