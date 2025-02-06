@@ -23,7 +23,7 @@ function Projects(props){
                     />
                     <Typography variant="body1">I did this</Typography>
                     <Box sx={{display:"flex", justifyContent:"center"}}>
-                    <Button>Link</Button>
+                    <Button target="_blank" href="https://github.com/robnaratt34/portfolio-site.git">Link</Button>
                     </Box>
                 </CardContent>
             </Card>
