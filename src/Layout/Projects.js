@@ -15,13 +15,13 @@ function Projects(props){
             {projects.map((project)=> <ProjectCard project={project}/>)}
             <Card sx={{width:345}}>
                 <CardContent>
-                    <Typography variant="h4" sx={{display:"flex", justifyContent:"center"}}>Project</Typography>
+                    <Typography variant="h4" sx={{display:"flex", justifyContent:"center"}}>Portfolio Site</Typography>
                     <CardMedia 
                         sx={{height:180}}
                         image={logo}
                         title="js image"
                     />
-                    <Typography variant="body1">I did this</Typography>
+                    <Typography variant="body1">This site was made with React and Material UI</Typography>
                     <Box sx={{display:"flex", justifyContent:"center"}}>
                     <Button target="_blank" href="https://github.com/robnaratt34/portfolio-site.git">Link</Button>
                     </Box>

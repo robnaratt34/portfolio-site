@@ -3,14 +3,14 @@ export const data = {
     active:[
       {
         name: "We Love Movies",
-        description: "You Know",
+        description: "A project that uses react, express, and a Postgre database to display movies and where they are playing.",
         link: '#',
         logo: '../Media/wam.png',
         github: 'https://github.com/robnaratt34/welovemovies.git',
       },
       {
-        name: "Whack-A-Mole",
-        description: "You Know",
+        name: "Whack-A-Martian",
+        description: "A Whack-a-Mole like game with a Martian aesthetic, built with jquery.",
         link: '#',
         logo: '../Media/wam.png',
         github: 'https://github.com/robnaratt34/whack-a-mole.git',
@@ -19,13 +19,13 @@ export const data = {
     all:[
       {
         name: "We Love Movies",
-        description: "You Know",
+        description: "A project that uses react, express, and a Postgre database to display movies and where they are playing.",
         logo: '../Media/wam.png',
         github: 'https://github.com/robnaratt34/welovemovies.git',
       },
       {
         name: "Whack-A-Mole",
-        description: "You Know",
+        description: "A Whack-a-Mole like game with a Martian aesthetic, built with jquery.",
         logo: '../Media/wam.png',
         github: 'https://github.com/robnaratt34/whack-a-mole.git',
       }
