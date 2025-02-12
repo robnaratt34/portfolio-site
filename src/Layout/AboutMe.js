@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography} from "@mui/material";
+import { Box, Typography, Chip} from "@mui/material";
 import profile from "../Media/js.png"
 
 function AboutMe({about, skills, achievements}){
@@ -10,8 +10,10 @@ function AboutMe({about, skills, achievements}){
         <Typography variant="body1">
           {about}
         </Typography>
+        <br>
+        <Typography variant="body1">Skills:</Typography>
         <Box sx={{display:"flex"}}>
-          {skills.map((skill) => <Typography>{skill}</Typography>)}
+          {skills.map((skill) => <Chip label={skill} />)}
         </Box>
       </Box>
     </Box>
